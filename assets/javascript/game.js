@@ -53,10 +53,10 @@
 
 			//Reset the images
 			if (guessesLeft == 9) {
-				document.getElementById("motherImg").removeAttribute("src");
-				document.getElementById("fatherImg").removeAttribute("src");
-				document.getElementById("wybieImg").removeAttribute("src");
-				document.getElementById("bobinskyImg").removeAttribute("src");
+				document.getElementById("motherImage").src = "assets/images/Coraline_Mother.png";
+				document.getElementById("fatherImage").src = "assets/images/Coraline_Father.png";
+				document.getElementById("wybieImage").src = "assets/images/Coraline_Wybie.png";
+				document.getElementById("bobinskyImage").src = "assets/images/Coraline_MrB.png";
 			}
 
 		//Add the correct number of blanks to the answerDisplay that corresponds with the length of the currentWord
@@ -132,7 +132,7 @@
 			newGame();
 			document.getElementById("guessedLetters").innerHTML = "Letters Already Guessed:" + " " + " ";
 
-		} else if (guessesLeft === 0) { //Check if user lost
+		} else if (guessesLeft == 0) { //Check if user lost
 			losses++;
 			alert("OH NO! You have 0 guesses left, and all your friends have stitched buttons in their eyes now. The correct word was '" + currentWord + "'. Do you want to try again?");
 			console.log("You Lost!");
@@ -165,19 +165,19 @@
 
 		//Game interation with the images (Guesses Left, as displayed by images)
 		
-		if (guessesLeft == 7) {
-			document.getElementById("motherImg").src = "http://i66.tinypic.com/234i6h.png";
+		if (guessesLeft === 7) {
+			document.getElementById("motherImage").src = "assets/images/Mother_Buttons.png";
 		}
 	
-		if (guessesLeft == 5) {
-			document.getElementById("fatherImg").src = "http://i66.tinypic.com/234i6h.png";
+		if (guessesLeft === 5) {
+			document.getElementById("fatherImage").src = "assets/images/Father_Buttons.png";
 
-		if (guessesLeft == 3) {
-			document.getElementById("wybieImg").src = "http://i66.tinypic.com/234i6h.png";
+		if (guessesLeft === 3) {
+			document.getElementById("wybieImage").src = "assets/images/Wybie_Buttons.png";
 		}
 
-		if (guessesLeft == 1) {
-			document.getElementById("bobinskyImg").src = "http://i66.tinypic.com/234i6h.png";
+		if (guessesLeft === 1) {
+			document.getElementById("bobinskyImage").src = "assets/images/MrB_Buttons.png";
 		}
 	}
 
