@@ -1,0 +1,95 @@
+body {
+	background: url("../images/Coraline_tunnel.png");
+    background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center; 
+	background-color: #cccccc;
+	font-family: 'Averia Serif Libre', sans-serif;
+	color: #ffffff;
+	align-content: center;
+}
+
+#title {
+	margin-top: 20px;
+}
+
+#gameInstructions {
+	font-size: 140%;
+	margin-top: 10px;
+}
+
+#gameContainer {
+	margin-top: 0px;
+	padding: 10px;
+}
+
+#leftColumn {
+	border: 1px solid yellow;
+	padding: 30px;
+}
+
+#rightColumn {
+	border: 1px solid yellow; 
+	padding: 30px;
+	height: 625px;
+}
+
+#currentWord {
+	text-align: center;
+}
+
+#theWord {
+	font-size: 120%;
+	background-color: #252525; 
+	line-height: 2.5;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+#winLose {
+	margin: auto;
+	border: 1px dashed yellow;
+	margin-top: 30px;
+}
+
+#wins, #losses{
+	height: 30px;
+	font-size: 130%;
+	line-height: 30px;
+	margin: 20Px;
+}
+
+#remGuesses {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#guessedLetters {
+	background-color: yellow;
+	color: #252525;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-size: 120%;
+}
+
+.imgDivs {
+	margin-bottom: 30px;
+}
+
+.names {
+	font-size: 90%;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+p {
+	font-size: 110%;
+}
+
+#song {
+	margin-bottom: 10px;
+
+}
