@@ -165,20 +165,20 @@
 
 		//Game interation with the images (Guesses Left, as displayed by images)
 		
-		if (guessesLeft === 7) {
+		if (guessesLeft == 7) {
 			document.getElementById("motherImage").src = "assets/images/Mother_Buttons.png";
 		}
 	
-		if (guessesLeft === 5) {
+		if (guessesLeft == 5) {
 			document.getElementById("fatherImage").src = "assets/images/Father_Buttons.png";
+		}
 
-		if (guessesLeft === 3) {
+		if (guessesLeft == 3) {
 			document.getElementById("wybieImage").src = "assets/images/Wybie_Buttons.png";
 		}
 
-		if (guessesLeft === 1) {
+		if (guessesLeft == 1) {
 			document.getElementById("bobinskyImage").src = "assets/images/MrB_Buttons.png";
 		}
-	}
+	};
 
-};
