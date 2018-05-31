@@ -24,12 +24,12 @@ body {
 }
 
 #leftColumn {
-	border: 1px solid yellow;
+	border: 1px solid #ffd700;
 	padding: 30px;
 }
 
 #rightColumn {
-	border: 1px solid yellow; 
+	border: 1px solid #ffd700; 
 	padding: 30px;
 	height: 625px;
 }
@@ -48,7 +48,7 @@ body {
 
 #winLose {
 	margin: auto;
-	border: 1px dashed yellow;
+	border: 1px dashed #ffd700;
 	margin-top: 30px;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 #guessedLetters {
-	background-color: yellow;
+	background-color: #ffd700;
 	color: #252525;
 	height: 40px;
 	line-height: 40px;
@@ -87,9 +87,4 @@ body {
 
 p {
 	font-size: 110%;
-}
-
-#song {
-	margin-bottom: 10px;
-
 }

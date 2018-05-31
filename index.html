@@ -4,40 +4,28 @@
 	<meta charset="utf-8">
 	<title>Coraline's Guessing Game</title>
 
-	<!-- Linking Reset.css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-	<!-- Setting the Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- BOOTSTRAP 4: Latest compiled and minified CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Linking my own CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<!-- Linking Google Web Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700" rel="stylesheet">
-
 	<link rel="icon" type="image/png" href="assets/images/Carolunita.png">
 
 </head>
 <body>
-<div class="container"> <!-- container -->
+<div class="container">
 
-	<div class="row"> <!-- row -->
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- column -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-			<!-- TITLE -->
 			<img src="assets/images/Coraline_Logo.png" alt="Coraline Logo" class="d-block mx-auto img-fluid" id="title">
 
 		</div>
 	</div>
 
-	<div class="row"> <!-- row -->
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- column -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-			<!-- Instructions of the game -->
 			<div class="text-center" id="gameInstructions">
 				<p>Press any key to get started!</p>
 			</div>
@@ -54,13 +42,13 @@
 			</audio>
 		</div>
 
-		</div> <!-- column -->
-	</div> <!-- row -->
+		</div>
+	</div>
 
 
-	<div class="row" id="gameContainer"> <!-- row 1 -->
+	<div class="row" id="gameContainer">
 
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="leftColumn"> <!-- column left-->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="leftColumn">
 			<div class="row" id="images">
 				<div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs">
 					<img id="motherImage" src="assets/images/Coraline_Mother.png" width="120" height="120" alt="Mother" class="d-block mx-auto img-fluid"><p class="text-center names">MOTHER</p>
@@ -75,43 +63,38 @@
 					<img id="bobinskyImage" src="assets/images/Coraline_MrB.png" width="120" height="120" alt="Bobinsky" class="d-block mx-auto img-fluid"><p class="text-center names">MR. BOBINSKY</p>
 				</div>
 			</div>	
-		</div> <!-- column left-->
+		</div>
+
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="rightColumn">
 
 
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="rightColumn"> <!-- column right-->
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="currentWord">
 
-
-			<div class="row"> <!-- row -->
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="currentWord"> <!-- column -->
-
-					<!-- CURRENT WORD TO BE GUESSED -->
 						<div >
 							<h3 id="theWord">CURRENT WORD</h3>
 						</div>
 
-				</div> <!-- column -->
-			</div> <!-- row -->
+				</div>
+			</div>
 
+			<div class="row"> 
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-			<div class="row"> <!-- row -->
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- column -->
+						<div class="row" id="winLose"> 
 
-					<!-- Game Stats -->
-						<div class="row" id="winLose"> <!-- row -->
-
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> <!-- column -->
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<div >
 									<h3 id="wins">Wins:  </h3>
 								</div>
-							</div> <!-- column -->
+							</div>
 
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> <!-- column -->
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 								<div >
 									<h3 id="losses">Losses:  </h3>
 								</div>
-							</div> <!-- column -->							
-						</div> <!-- row -->
-
+							</div>					
+						</div> 
 
 						<div>
 							<h3 class="text-center" id="remGuesses">Number of Guesses Remaining:  </h3>
@@ -121,14 +104,13 @@
 							<h3 id="guessedLetters">Letters Already Guessed:  </h3>
 							<img src="assets/images/Coraline_Yellow.png"  width="140" height="140" alt="Wybie" class="d-block mx-auto img-fluid">
 						</div>
-				</div> <!-- column -->
-			</div> <!-- row -->
-		</div> <!-- column right-->
+				</div>
+			</div>
+		</div>
 
-	</div> <!-- game container -->
-</div> <!-- container -->
+	</div>
+</div>
 
-<!-- Linking my own JAVASCRIPT -->
 <script src="assets/javascript/game.js"></script>
 
 </body>
